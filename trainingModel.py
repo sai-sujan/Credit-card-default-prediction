@@ -15,8 +15,7 @@ from file_operations import file_methods
 from application_logging import logger
 import numpy as np
 import pandas as pd
-import mlflow
-import mlflow.sklearn
+
 from urllib.parse import urlparse
 
 
