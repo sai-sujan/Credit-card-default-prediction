@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4e322c-def8-4b1d-aecf-af1e4323f557" name="Default Changelist" comment="" />
+    <list default="true" id="0a4e322c-def8-4b1d-aecf-af1e4323f557" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Database/Prediction.db" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Database/Prediction.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_FileFromDB/InputFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_FileFromDB/InputFile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/DataBaseConnectionLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/DataBaseConnectionLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/DbInsertLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/DbInsertLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/DbTableCreateLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/DbTableCreateLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/ExportToCsv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/ExportToCsv.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/GeneralLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/GeneralLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/Prediction_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/Prediction_Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/columnValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/columnValidationLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/dataTransformLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/dataTransformLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/missingValuesInColumn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/missingValuesInColumn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Logs/nameValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Logs/nameValidationLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_Output_File/Predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_Output_File/Predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Database/Training.db" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Database/Training.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DbInsertLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/DbInsertLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DbTableCreateLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/DbTableCreateLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/GeneralLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/GeneralLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/columnValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/columnValidationLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/dataTransformLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/dataTransformLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/missingValuesInColumn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/missingValuesInColumn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/nameValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/nameValidationLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Projects/creditCardDefaulters/code/Air quality predictinon/Air quality prediction/Air quality index prediction" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
@@ -138,5 +167,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/training_Validation_Insertion.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

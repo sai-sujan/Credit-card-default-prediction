@@ -1,23 +1,21 @@
-## Wafer Fault Detection
+## Credit Card Default Prediction End to End
 
 #### Problem Statement:
     
-    Wafer (In electronics), also called a slice or substrate, is a thin slice of semiconductor,
-    such as a crystalline silicon (c-Si), used for fabricationof integrated circuits and in photovoltaics,
-    to manufacture solar cells.
+    To build a classification methodology to determine whether a person defaults the credit card payment for the next month
     
     The inputs of various sensors for different wafers have been provided.
-    The goal is to build a machine learning model which predicts whether a wafer needs to be replaced or not
-    (i.e whether it is working or not) nased on the inputs from various sensors.
-    There are two classes: +1 and -1.
-    +1: Means that the wafer is in a working condition and it doesn't need to be replaced.
-    -1: Means that the wafer is faulty and it needa to be replaced.
+    The goal is to build a machine learning model which predicts whether a person will pay the credit card bill  or not
+    based on the inputs from various parameters.
+    There are two classes: 1 and 0.
+    1: Means that the person will pay the credit card bill.
+    0: Means that the person will not pay the credit card bill.
+     
     
 #### Data Description
     
-    The client will send data in multiple sets of files in batches at a given location.
-    Data will contain Wafer names and 590 columns of different sensor values for each wafer.
-    The last column will have the "Good/Bad" value for each wafer.
+    The client will send data in multiple sets of files in batches at a given location. The data has been extracted from the census bureau. 
+    The data contains 32561 instances.
     
     Apart from training files, we laso require a "schema" file from the client, which contain all the
     relevant information about the training files such as:
@@ -202,7 +200,7 @@ DOCKER_HUB_PASSWORD_USER
 HEROKU_API_KEY
 HEROKU_APP_NAME
 HEROKU_EMAIL_ADDRESS
-DOCKER_IMAGE_NAME=wafercircle3270303
+DOCKER_IMAGE_NAME=<docker_name>
 ```
 
 

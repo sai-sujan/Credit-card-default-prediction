@@ -2,3 +2,14 @@
 2022-02-20/13:22:13		GoodRaw directory deleted successfully!!!
 2022-02-20/13:35:10		BadRaw directory deleted before starting validation!!!
 2022-02-20/13:35:10		GoodRaw directory deleted successfully!!!
+2022-02-22/13:22:48		BadRaw directory deleted before starting validation!!!
+2022-02-22/13:22:49		GoodRaw directory deleted successfully!!!
+2022-02-22/13:56:44		BadRaw directory deleted before starting validation!!!
+2022-02-22/13:56:47		Error while Deleting Directory : [WinError 32] The process cannot access the file because it is being used by another process: 'Training_Raw_files_validated/Good_Raw/creditCardFraud_28011982_120232.csv'
+2022-02-22/15:24:07		GoodRaw directory deleted successfully!!!
+2022-02-22/15:33:39		BadRaw directory deleted before starting validation!!!
+2022-02-22/15:33:39		GoodRaw directory deleted successfully!!!
+2022-02-22/15:34:04		BadRaw directory deleted before starting validation!!!
+2022-02-22/15:34:04		GoodRaw directory deleted successfully!!!
+2022-02-22/15:40:44		BadRaw directory deleted before starting validation!!!
+2022-02-22/15:40:44		GoodRaw directory deleted successfully!!!

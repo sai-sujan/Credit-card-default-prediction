@@ -127,14 +127,14 @@ class dBOperation:
 
         for file in onlyfiles:
             try:
-                with open(goodFilePath+'/'+file, "r") as f:
+                with open(goodFilePath + '/' + file, "r") as f:
                     next(f)
                     reader = csv.reader(f, delimiter="\n")
                     for line in enumerate(reader):
                         for list_ in (line[1]):
                             try:
                                 conn.execute('INSERT INTO Good_Raw_Data values ({values})'.format(values=(list_)))
-                                self.logger.log(log_file," %s: File loaded successfully!!" % file)
+                                self.logger.log(log_file, " %s: File loaded successfully!!" % file)
                                 conn.commit()
                             except Exception as e:
                                 raise e

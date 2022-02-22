@@ -12,8 +12,7 @@ os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
 
 app = Flask(__name__)
-app.config["UPLOAD_FOLDER"] = "upload_data/"
-
+app.config['UPLOAD_FOLDER'] = 'upload_data/'
 #dashboard.bind(app)
 CORS(app)
 
@@ -26,10 +25,10 @@ def home():
 @cross_origin()
 def predictRouteClient():
     try:
-        if request.method=='POST':
-            f = request.files['file']
-            f.save(app.config["UPLOAD_FOLDER"] + f.filename)
-            path = app.config["UPLOAD_FOLDER"]
+        if request.method =='POST' and request.form.get('csvfile') == 'csvfile':
+            f = request.files['csvfile']
+            f.save(app.config['UPLOAD_FOLDER'] + f.filename)
+            path = app.config['UPLOAD_FOLDER']
 
             pred_val = pred_validation(path) #object initialization
 
@@ -39,9 +38,9 @@ def predictRouteClient():
 
             # predicting for dataset present in database
             path = pred.predictionFromModel()
-            return render_template('index.html', path=("Prediction File created at %s!!!" % path))
+            return render_template('index.html', path="Prediction File created at %s!!!" % path)
         elif request.form is not None:
-            path = request.form['filepath']
+            path = 'Prediction_Batch_files'
 
             pred_val = pred_validation(path) #object initialization
 
@@ -51,34 +50,37 @@ def predictRouteClient():
 
             # predicting for dataset present in database
             path = pred.predictionFromModel()
-            return Response("Prediction File created at %s!!!" % path)
+            return render_template('index.html', path="Prediction File created at %s!!!" % path)
 
     except ValueError:
-        return Response("Error Occurred! %s" %ValueError)
+
+        return Response("Error Occurred! %s" % ValueError)
+
     except KeyError:
-        return Response("Error Occurred! %s" %KeyError)
+
+        return Response("Error Occurred! %s" % KeyError)
+
     except Exception as e:
-        return Response("Error Occurred! %s" %e)
+
+        return Response("Error Occurred! %s" % e)
+    return Response("Training successfull!!")
 
 
 
-@app.route("/train", methods=['GET', 'POST'])
+@app.route("/train", methods=['POST'])
 @cross_origin()
 def trainRouteClient():
+
     try:
-        # if request.json['folderPath'] is not None:
-        folder_path = "Training_Batch_Files"
-        # path = request.json['folderPath']
-        if folder_path is not None:
-            path = folder_path
+        if request.json['filepath'] is not None:
+            path = request.json['filepath']
+            train_valObj = train_validation(path) #object initialization
 
-            train_valObj = train_validation(path)  # object initialization
+            train_valObj.train_validation()#calling the training_validation function
 
-            train_valObj.train_validation()  # calling the training_validation function
 
-            trainModelObj = trainModel()  # object initialization
-            trainModelObj.trainingModel()  # training the model for the files in the table
-
+            trainModelObj = trainModel() #object initialization
+            trainModelObj.trainingModel() #training the model for the files in the table
 
 
     except ValueError:
@@ -94,8 +96,6 @@ def trainRouteClient():
         return Response("Error Occurred! %s" % e)
     return Response("Training successfull!!")
 
-"""port = int(os.getenv("PORT",5001))
-"""
+port = int(os.getenv("PORT",5001))
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(port=port,debug=True)
