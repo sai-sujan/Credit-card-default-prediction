@@ -21,27 +21,28 @@ CORS(app)
 def home():
     return render_template('index.html')
 
-@app.route("/predict", methods=['POST'])
+@app.route("/predict", methods=['GET','POST'])
 @cross_origin()
 def predictRouteClient():
     try:
-        if request.method =='POST' and request.form.get('csvfile') == 'csvfile':
+        if request.method =='POST' and request.form.get('action1') == 'Custom File Predict':
             f = request.files['csvfile']
             f.save(app.config['UPLOAD_FOLDER'] + f.filename)
             path = app.config['UPLOAD_FOLDER']
+            print(path)
 
-            pred_val = pred_validation(path) #object initialization
+            #pred_val = pred_validation(path) #object initialization
 
-            pred_val.prediction_validation() #calling the prediction_validation function
+            #pred_val.prediction_validation() #calling the prediction_validation function
 
             pred = prediction(path) #object initialization
 
             # predicting for dataset present in database
             path = pred.predictionFromModel()
             return render_template('index.html', path="Prediction File created at %s!!!" % path)
-        elif request.form is not None:
+        elif request.method =='POST' and request.form.get('action2') == 'Default File Predict':
             path = 'Prediction_Batch_files'
-
+            print(path)
             pred_val = pred_validation(path) #object initialization
 
             pred_val.prediction_validation() #calling the prediction_validation function
