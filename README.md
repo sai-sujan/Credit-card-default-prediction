@@ -1,7 +1,7 @@
 ## Credit Card Default Prediction End to End
 
 ##Heroku Deployment Link
-<a href="https://credit-card-defalut-557.herokuapp.com/">https://credit-card-defalut-557.herokuapp.com/</a>
+<a href="https://creditcarddefaultpred.herokuapp.com/">https://creditcarddefaultpred.herokuapp.com/</a>
 
 
 #### Problem Statement:
