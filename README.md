@@ -8,7 +8,7 @@
     
     To build a classification methodology to determine whether a person defaults the credit card payment for the next month
     
-    The inputs of various sensors for different wafers have been provided.
+    
     The goal is to build a machine learning model which predicts whether a person will pay the credit card bill  or not
     based on the inputs from various parameters.
     There are two classes: 1 and 0.
